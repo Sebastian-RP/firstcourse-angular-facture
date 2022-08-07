@@ -10,6 +10,8 @@ import { ProductsService } from '../services/products.service';
 export class ProductsListComponent implements OnInit {
 
   public productsForm!: FormGroup;
+  public productsList: Array<any> = [];
+  public displayedColumns: string[] = ['position', 'name', 'weight', 'symbol'];
 
   constructor(
     private service: ProductsService
@@ -28,8 +30,17 @@ export class ProductsListComponent implements OnInit {
 
   submit() {
     console.log(this.productsForm.value);//productForm, valor del formulario con el campo name y code this.productsForm
-
-    this.service.getProducts(); //llamamos un metodo del servicio creado
+    
+    //llamamos un metodo del servicio creado
+  //   this.service.getProducts(this.productsForm.value).subscribe(
+  //     (res: any) => {
+  //       console.log(res);
+  //       this.productsList = res.items;
+  //     },
+  //     (error: any) => {
+  //       console.log(error);
+  //     }
+  //   )
   }
 
 }
