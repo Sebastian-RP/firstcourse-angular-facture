@@ -12,6 +12,7 @@ export class ProductsListComponent implements OnInit {
   public productsForm!: FormGroup;
   public productsList: Array<any> = [];
   public displayedColumns: string[] = ['position', 'name', 'weight', 'symbol'];
+  public dataSource = [];
 
   constructor(
     private service: ProductsService

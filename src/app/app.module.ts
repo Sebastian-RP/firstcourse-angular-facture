@@ -23,7 +23,8 @@ import { MatCardModule } from '@angular/material/card';
 import { MatFormFieldModule } from '@angular/material/form-field';
 import { MatInputModule } from '@angular/material/input';
 import { HttpClientModule } from '@angular/common/http';
-
+import { PersonajesComponent } from './components/personajes/personajes.component';
+import { MatGridListModule } from '@angular/material/grid-list';
 
 //en app.component almacena todas las importaciones
 //lo que se declara en la vista ira a la declaration
@@ -35,7 +36,8 @@ import { HttpClientModule } from '@angular/common/http';
     RegisterComponent,
     ProductsComponent,
     ProductsListComponent,
-    ProductsNewComponentComponent
+    ProductsNewComponentComponent,
+    PersonajesComponent
   ],
   imports: [
     BrowserModule,
@@ -54,6 +56,7 @@ import { HttpClientModule } from '@angular/common/http';
     FormsModule, 
     ReactiveFormsModule,
     HttpClientModule,
+    MatGridListModule,
   ],
   providers: [],
   bootstrap: [AppComponent]

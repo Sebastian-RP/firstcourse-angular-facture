@@ -16,6 +16,6 @@ export class ProductsService {
   getProducts(filtros: any) {
     const endpoint  = 'products/get'; 
     const url = `${this.API_URL}${endpoint}`;
-    this.http.post(url, filtros);
+    return this.http.post(url, filtros);
   }
 }
