@@ -1,0 +1,12 @@
+<div>
+    <h2>test-additional works!</h2>
+
+    <form action="" [formGroup]="productsForm">
+        <mat-form-field appearance="fill">
+            <mat-label >Input</mat-label>
+            <input matInput formControlName="valueTest" (change)="agregaFavorito()">
+        </mat-form-field>
+    </form>
+
+    <app-attach-additional-files></app-attach-additional-files>
+</div>

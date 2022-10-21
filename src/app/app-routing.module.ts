@@ -6,11 +6,12 @@ import { ProductsComponent } from './components/products/products.component';
 import { ProductsListComponent } from './components/products/products-list/products-list.component';
 import { RegisterComponent } from './components/register/register.component';
 import { ProductsNewComponentComponent } from './components/products/products-new-component/products-new-component.component';
+import { TestAdditionalComponent } from './test-additional/test-additional.component';
 
 const routes: Routes = [
   {
     path: '',
-    redirectTo: 'home',
+    redirectTo: 'test-files',
     pathMatch: 'full',
   },
   {
@@ -45,6 +46,10 @@ const routes: Routes = [
   {
     path: 'register',
     component: RegisterComponent
+  },
+  {
+    path: 'test-files',
+    component: TestAdditionalComponent
   }
 ];
 

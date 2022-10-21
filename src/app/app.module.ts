@@ -25,6 +25,8 @@ import { MatInputModule } from '@angular/material/input';
 import { HttpClientModule } from '@angular/common/http';
 import { PersonajesComponent } from './components/personajes/personajes.component';
 import { MatGridListModule } from '@angular/material/grid-list';
+import { AttachAdditionalFilesComponent } from './attach-additional-files/attach-additional-files.component';
+import { TestAdditionalComponent } from './test-additional/test-additional.component';
 
 //en app.component almacena todas las importaciones
 //lo que se declara en la vista ira a la declaration
@@ -37,7 +39,9 @@ import { MatGridListModule } from '@angular/material/grid-list';
     ProductsComponent,
     ProductsListComponent,
     ProductsNewComponentComponent,
-    PersonajesComponent
+    PersonajesComponent,
+    AttachAdditionalFilesComponent,
+    TestAdditionalComponent
   ],
   imports: [
     BrowserModule,
